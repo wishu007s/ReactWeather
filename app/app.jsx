@@ -1,3 +1,5 @@
+/* global $*/
+
 var React           = require("react"),
     ReactDOM        = require("react-dom");
 var {Route, Router, IndexRoute, hashHistory} = require("react-router");

@@ -2,8 +2,7 @@ var React       = require("react"),
     WeatherForm = require("WeatherForm"),
     WeatherMessage = require("WeatherMessage"),
     openWeatherMap = require("openWeatherMap");
-    //http://api.openweathermap.org/data/2.5/weather?q=hindupur&units=metric&appid=4207dce8507d799da6b96bf8ed08b848
-    //4207dce8507d799da6b96bf8ed08b848
+    
 
 var Weather    = React.createClass({
     getInitialState: function(){
@@ -37,7 +36,7 @@ var Weather    = React.createClass({
         }
         return (
             <div>
-                <h2>Weather Component</h2>
+                <h1 className="text-center page-title">Get Weather</h1>
                 <WeatherForm onSearch={this.handleSearch}/>
                 {renderMsg()}
             </div>
